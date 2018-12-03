@@ -1,0 +1,7 @@
+{
+	"name": "Tricon badge for Achievements",
+	"description": "This badge is given for achievements made in Tricon",
+	"image": "http://triconinfotech.com/badge1.png",
+	"criteria": "http://triconinfotech.com/tricon-badge-criteria.html",
+	"issuer": "http://triconinfotech.com/badge-issuer.json"
+}

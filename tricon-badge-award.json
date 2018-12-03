@@ -1,0 +1,14 @@
+{
+  "uid": "a1b2c3d4e5",
+  "recipient": {
+    "type": "email",
+    "identity": "vinayrsattur@gmail.com",
+    "hashed": false
+  },
+  "issuedOn":  1543842260657,
+  "badge": "http://triconinfotech.com/tricon-badge-class.json",
+  "verify": {
+    "type": "hosted",
+    "url": "http://triconinfotech.com/tricon-badge-award.json"
+  }
+}
