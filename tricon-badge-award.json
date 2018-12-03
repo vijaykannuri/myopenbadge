@@ -6,9 +6,9 @@
     "hashed": false
   },
   "issuedOn":  1543842260657,
-  "badge": "http://triconinfotech.com/tricon-badge-class.json",
+  "badge": "https://github.com/vinay-sattur/myopenbadge/blob/master/tricon-badge-class.json",
   "verify": {
     "type": "hosted",
-    "url": "http://triconinfotech.com/tricon-badge-award.json"
+    "url": "https://github.com/vinay-sattur/myopenbadge/blob/master/tricon-badge-award.json"
   }
 }
