@@ -1,0 +1,14 @@
+{
+    "uid": "java_dev_123456",
+    "recipient": {
+      "type": "email",
+      "identity": "vinayrsattur@gmail.com",
+      "hashed": false
+    },
+    "issuedOn":  1544172801,
+    "badge": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/java_dev/java_dev_badge_class.json",
+    "verify": {
+      "type": "hosted",
+      "url": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/java_dev/assertions/123456.json"
+    }
+  }

@@ -1,0 +1,7 @@
+{
+	"name": "Tricon badge for Automation testing Certification",
+	"description": "This badge is given for completion of  Automation testing course made in Tricon",
+	"image": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/tstg/front.png",
+	"criteria": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/tstg-badge-criteria.html",
+	"issuer": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/badge-issuer.json"
+}

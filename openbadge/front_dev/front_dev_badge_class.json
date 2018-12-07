@@ -1,0 +1,7 @@
+{
+	"name": "Tricon badge for Front end develpment Certification",
+	"description": "This badge is given for completion of Fornt end development course made in Tricon",
+	"image": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/front_dev/front.png",
+	"criteria": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/front-badge-criteria.html",
+	"issuer": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/badge-issuer.json"
+}

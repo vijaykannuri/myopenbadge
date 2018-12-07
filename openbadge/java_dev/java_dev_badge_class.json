@@ -1,0 +1,7 @@
+{
+	"name": "Tricon badge for Java Certification",
+	"description": "This badge is given for completion of Java development course made in Tricon",
+	"image": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/java_dev/java.png",
+	"criteria": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/java-badge-criteria.html",
+	"issuer": "https://raw.githubusercontent.com/vinay-sattur/myopenbadge/master/openbadge/badge-issuer.json"
+}
