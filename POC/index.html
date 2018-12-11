@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tricon Badge</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	#badgeContainer img{
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+	Select Badge:
+	<select id="badges">
+		<option value="0">Select badge</option>
+		<option value="java_dev">Java Developer</option>
+		<option value="front_dev">Front end Developer</option>
+		<option value="tstg">Automation Tester</option>
+	</select>
+
+	<br><br>
+	
+	Select earner:
+	<select id="earner">
+		<option value="0">Select Earner</option>
+		<option value="vinayrsattur@gmail.com" userId="123456">vinayrsattur@gmail.com</option>
+		<option value="someone@gmail.com" userId="567890">someone@gmail.com</option>
+	</select>
+
+	<br><br>
+
+	<button id="issuebadge">Issue Badge!</button>
+	<!--<button id="phptest">PHP test</button>-->
+	
+	<div id="badgeContainer"></div>
+
+	<script src="jquery-1.9.1.min.js"></script>
+	
+<script>
+
+var users = {
+	"vinayrsattur@gmail.com": "123456",
+	"someone@gmail.com": "567890"
+};
+
+	$(document).ready(function(){
+	
+		$('#issuebadge').on('click', function(){
+			console.log("Issueing badge!");
+			
+
+			var badgeValue = $('#badges').val();
+			var earnerValue = $('#earner').val();
+
+			if(badgeValue == "0"){
+				alert("Please select a badge!");
+				return;
+			}
+			if(earnerValue == "0"){
+				alert("Please select an earner!");
+				return;
+			}
+			
+			$('#badgeContainer').html('');
+
+			$.ajax({
+				type: 'post',
+				url : '/generatebadge',
+				data: {
+					badge: badgeValue,
+					earner: {
+						email: earnerValue,
+						id: users[earnerValue]
+					}
+				},
+				success: function(data){
+					console.log(data.image);
+					var message;
+					if(data.status == "success"){
+						message = "Badge issued successfully to "+earnerValue;
+						$('#badgeContainer').html('<h3>'+message+'</h3><br><image src="'+data.image+'"><br><a href="'+data.image+'" download="'+data.image+'">Click here to download image</a>');
+					}else if(data.status == "issued"){
+						message = "Badge has been issued already to "+earnerValue;
+						$('#badgeContainer').html('<h3>'+message+'</h3><br><image src="'+data.image+'"><br><a href="'+data.image+'" download="'+data.image+'">Click here to download image</a>');
+					}else if(data.status == "error"){
+						message = "There was an error while issueing badge";
+						$('#badgeContainer').html('<h3>'+message+'</h3><br>');
+					}
+
+				},
+				error: function(data){
+					var message = "There was an error while issueing badge";
+						$('#badgeContainer').html('<h3>'+message+'</h3><br><br>');
+				},
+				complete: function(){
+
+				}
+			});
+
+		});
+  
+  });
+
+
+</script>
+
+
+</body>
+</html>

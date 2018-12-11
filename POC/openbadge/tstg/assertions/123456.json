@@ -1,0 +1,14 @@
+{
+    "uid": "tstg_123456",
+    "recipient": {
+      "type": "email",
+      "identity": "vinayrsattur@gmail.com",
+      "hashed": false
+    },
+    "issuedOn":  1544172801,
+    "badge": "http://badges.epizy.com/openbadge/tstg/tstg_badge_class.json",
+    "verify": {
+      "type": "hosted",
+      "url": "http://badges.epizy.com/openbadge/tstg/assertions/123456.json"
+    }
+  }

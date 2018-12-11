@@ -1,0 +1,14 @@
+{
+    "uid": "java_dev_567890",
+    "recipient": {
+      "type": "email",
+      "identity": "someone@gmail.com",
+      "hashed": false
+    },
+    "issuedOn":  1544172801,
+    "badge": "http://badges.epizy.com/openbadge/java_dev/java_dev_badge_class.json",
+    "verify": {
+      "type": "hosted",
+      "url": "http://badges.epizy.com/openbadge/java_dev/assertions/567890.json"
+    }
+  }

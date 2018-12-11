@@ -1,0 +1,7 @@
+{
+	"name": "Tricon badge for Java Certification",
+	"description": "This badge is given for completion of Java development course made in Tricon",
+	"image": "http://badges.epizy.com/openbadge/java_dev/java.png",
+	"criteria": "http://badges.epizy.com/java-badge-criteria.html",
+	"issuer": "http://badges.epizy.com/openbadge/badge-issuer.json"
+}
